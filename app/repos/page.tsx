@@ -20,7 +20,7 @@ export default function page() {
                 <div className="absolute top-0 pt-4 right-0 pr-4">
                     <Button onClick={returnSearchPage} className="bg-gray-950 text-slate-100 rounded-[6px]">Return to search page</Button>
                 </div>
-                <Card className="max-w-[1200px]">
+                <Card className="max-w-[1400px]">
                     <CardHeader className="w-full m-auto text-center">
                         <CardTitle>GitHuB - Repository</CardTitle>
                         <CardDescription>
@@ -33,7 +33,7 @@ export default function page() {
                             .sort((a, b) => b.stargazers_count - a.stargazers_count)
                             .slice(0, 5)
                             .map((repo) => (
-                                <Card key={repo?.name} className="w-[300px] h-[300px] p-4 ">
+                                <Card key={repo?.name} className="w-[400px] h-[300px] p-4 ">
                                     <div className="">
                                         <p className="flex gap-4 flex-row"> <span className="flex gap-2"><Folder className="text-[8px]"/> Name:{repo?.name}</span></p>
                                         <p className="flex gap-4"> <span className="flex gap-2"><Star className="text-[8px]"/>  Stars:{repo?.stargazers_count}</span></p>
